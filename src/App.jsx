@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import TopBar from './components/TopBar'
 import TabBar from './components/TabBar'
 import Money from './components/Money'
+import Accounts from './components/Accounts'
 import Calendar from './components/Calendar'
 import Settings from './components/Settings'
 import FloatingActionButton from './components/FloatingActionButton'
@@ -54,6 +55,7 @@ function App() {
       </div>
       <div className="app-content">
         {activeTab === 'money' && <Money search={search} />}
+        {activeTab === 'accounts' && <Accounts />}
         {activeTab === 'calendar' && <Calendar />}
         {activeTab === 'settings' && (
           <Settings

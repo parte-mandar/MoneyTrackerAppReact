@@ -1,0 +1,42 @@
+.accounts-panel {
+  text-align: left;
+}
+
+.accounts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.account-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.account-card-name {
+  color: var(--text-h);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.account-card-type {
+  color: var(--text);
+  font-size: 0.8rem;
+  margin-top: 0.15rem;
+}
+
+.account-card-balance {
+  color: var(--text-h);
+  font-weight: 600;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.account-card-balance.negative {
+  color: #dc2626;
+}

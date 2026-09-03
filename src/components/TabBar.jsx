@@ -4,10 +4,12 @@ import {
   FiBarChart2,
   FiSettings,
 } from 'react-icons/fi'
+import { BsWallet2 } from 'react-icons/bs'
 import './TabBar.css'
 
 const TABS = [
   { id: 'money', label: 'Money', Icon: FiDollarSign },
+  { id: 'accounts', label: 'Accounts', Icon: BsWallet2 },
   { id: 'calendar', label: 'Calendar', Icon: FiCalendar },
   { id: 'statistics', label: 'Statistics', Icon: FiBarChart2 },
   { id: 'settings', label: 'Settings', Icon: FiSettings },
