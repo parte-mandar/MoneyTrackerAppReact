@@ -1,0 +1,124 @@
+.add-transaction-page {
+  position: fixed;
+  inset: 0;
+  background: var(--bg);
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+}
+
+.add-transaction-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+.add-transaction-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: transparent;
+  color: var(--text-h);
+  font-size: 1.3rem;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.add-transaction-close:hover {
+  background: var(--accent-bg);
+  color: var(--accent);
+}
+
+.add-transaction-title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+.add-transaction-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: left;
+  width: 100%;
+  max-width: 480px;
+}
+
+.form-label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.form-input {
+  font: inherit;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--text-h);
+  box-sizing: border-box;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.form-textarea {
+  resize: vertical;
+}
+
+.form-error {
+  width: 100%;
+  max-width: 480px;
+  margin: 0;
+  padding: 0.85rem 1rem;
+  border: 1px solid #dc2626;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  color: #dc2626;
+  box-sizing: border-box;
+}
+
+.add-transaction-submit {
+  margin-top: 8px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #fff;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  max-width: 480px;
+}
+
+.add-transaction-submit:hover {
+  filter: brightness(1.1);
+}
+
+.add-transaction-submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}

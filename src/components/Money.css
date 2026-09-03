@@ -1,0 +1,115 @@
+.money-panel {
+  text-align: left;
+}
+
+.money-hint,
+.money-error {
+  margin: 0;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.money-error {
+  color: #dc2626;
+  border-color: #dc2626;
+}
+
+.money-list {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.money-group + .money-group {
+  margin-top: 1rem;
+}
+
+.money-group-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 0.5rem;
+  padding: 0.5rem 0.25rem;
+  border: none;
+  background: transparent;
+  font: inherit;
+  cursor: pointer;
+  text-align: left;
+}
+
+.money-group-title {
+  color: var(--text-h);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.money-group-chevron {
+  color: var(--text);
+  font-size: 1.1rem;
+  transition: transform 0.15s;
+}
+
+.money-group-chevron.collapsed {
+  transform: rotate(-90deg);
+}
+
+.money-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+}
+
+.money-row + .money-row {
+  border-top: 1px solid var(--border);
+}
+
+.money-row-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+}
+
+.money-name {
+  color: var(--text-h);
+  font-size: 0.95rem;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.money-category {
+  color: var(--text);
+  font-size: 0.8rem;
+}
+
+.money-row-right {
+  flex-shrink: 0;
+  text-align: right;
+}
+
+.money-amount {
+  color: var(--text-h);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.money-amount.income {
+  color: #16a34a;
+}
+
+.money-amount.expense {
+  color: #dc2626;
+}
+
+.money-meta {
+  color: var(--text);
+  font-size: 0.8rem;
+}

@@ -1,0 +1,30 @@
+.top-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.6rem 1rem;
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  box-sizing: border-box;
+}
+
+.top-bar-icon {
+  flex-shrink: 0;
+  color: var(--text);
+  font-size: 1.1rem;
+}
+
+.top-bar-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font: inherit;
+  color: var(--text-h);
+}
+
+.top-bar-input::placeholder {
+  color: var(--text);
+}
