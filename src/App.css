@@ -1,0 +1,19 @@
+.app-shell {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--bg);
+  padding: 24px 32px 16px;
+  box-sizing: border-box;
+}
+
+.app-content {
+  padding: 0 32px 24px;
+  box-sizing: border-box;
+}
