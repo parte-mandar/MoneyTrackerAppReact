@@ -23,3 +23,13 @@
 .fab-icon {
   font-size: 1.5rem;
 }
+
+.fab-refresh {
+  right: 92px;
+  background: color-mix(in srgb, var(--accent) 12%, var(--bg));
+  color: var(--accent);
+}
+
+.fab-refresh:hover {
+  filter: brightness(1.05);
+}
